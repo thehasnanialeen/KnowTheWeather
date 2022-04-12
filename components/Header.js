@@ -22,7 +22,7 @@ export default function Header({ navigation, toScreen, active }) {
         style={{ backgroundColor: 'rgba(255,255,255,0.3)', elevation: 0 }}>
         <Appbar.Action
           icon="menu"
-          onPress={() => navigation.navigate(toScreen, {active: 'Regina'})}
+          onPress={() => {toScreen == 'MenuScreen' ? navigation.navigate(toScreen) : navigation.goBack()}}
         />
         <View style={{flex: 1}}>
           <Text style={{textAlign: 'center', fontSize: 25}}>Know The Weather</Text>

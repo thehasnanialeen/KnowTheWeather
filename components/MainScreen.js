@@ -9,19 +9,20 @@ import {
 import { Card, Title, Paragraph } from 'react-native-paper';
 
 export default function MainScreen({ params }) {
-  const DATA = [];
-  for (let i = 0; i < 24; i++) {
-    const items = {};
-    items['id'] = { i };
-    items['time'] = i + ' AM';
-    items['temperature'] = Math.floor(Math.random() * 5) + '°';
-    DATA.push(items);
-  }
 
   const oneDayTemp = ({ item }) => (
     <View style={styles.item}>
       <Text style={styles.title}>{item.time}</Text>
       <Text style={styles.title}>{item.temperature}</Text>
+    </View>
+  );
+
+   const tenDay = ({ item }) => (
+    <View style={styles.item}>
+      <Text style={styles.title}>{item.day}</Text>
+      <Text style={styles.title}>
+        H:{item.high}° L:{item.low}°
+      </Text>
     </View>
   );
 
@@ -64,66 +65,6 @@ export default function MainScreen({ params }) {
     </View>
   );
 
-  const TENDAY = [
-    {
-      day: 'Mon',
-      high: '5',
-      low: '-2',
-    },
-    {
-      day: 'Tue',
-      high: '3',
-      low: '-5',
-    },
-    {
-      day: 'Wed',
-      high: '10',
-      low: '-1',
-    },
-    {
-      day: 'Thu',
-      high: '8',
-      low: '-2',
-    },
-    {
-      day: 'Fri',
-      high: '11',
-      low: '-2',
-    },
-    {
-      day: 'Sat',
-      high: '9',
-      low: '-5',
-    },
-    {
-      day: 'Sun',
-      high: '5',
-      low: '-10',
-    },
-    {
-      day: 'Mon',
-      high: '7',
-      low: '-2',
-    },
-    {
-      day: 'Tue',
-      high: '6',
-      low: '0',
-    },
-    {
-      day: 'Wed',
-      high: '9',
-      low: '-2',
-    },
-  ];
-  const tenDay = ({ item }) => (
-    <View style={styles.item}>
-      <Text style={styles.title}>{item.day}</Text>
-      <Text style={styles.title}>
-        H:{item.high}° L:{item.low}°
-      </Text>
-    </View>
-  );
   return (
     <View style={styles.backgroundOpacity}>
       <View style={styles.currentTemperature}>
@@ -141,7 +82,7 @@ export default function MainScreen({ params }) {
         <View
           style={{ borderBottomColor: 'white', borderBottomWidth: 0.5 }}></View>
         <FlatList
-          data={DATA}
+          data={params.oneDayForcast}
           renderItem={oneDayTemp}
           keyExtractor={(item) => item.id}
           horizontal={true}
@@ -155,7 +96,7 @@ export default function MainScreen({ params }) {
         <View
           style={{ borderBottomColor: 'white', borderBottomWidth: 0.5 }}></View>
         <FlatList
-          data={TENDAY}
+          data={params.tenDayForcast}
           renderItem={tenDay}
           keyExtractor={(item) => item.id}
           horizontal={true}
