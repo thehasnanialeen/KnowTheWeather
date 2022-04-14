@@ -1,11 +1,23 @@
-# Sample Snack app
+# Know The Weather
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+I have been learning React Native for a few months and thought of implementing my newly learned knowledge. Know The Weather is a basic weather forecast app that shows the temperature and weather conditions of 5 cities (Regina, Vancouver, Toronto, Calgary, and Hyderabad). Know the current temperature, hourly forecast for the next 24 hours, 10-day forecast, and other weather conditions. At present all the app data is hard-coded and not actual.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo-cli](https://docs.expo.io/get-started/installation).
+## Installation
+### Prerequisites
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+To run this project in the development mode, you'll need to have a basic environment to run a React-Native App, which can be found [here](https://facebook.github.io/react-native/docs/getting-started).
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io/c/snack).
+### Installing and running the app
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+1. Clone the repo
+     ```bash
+     git clone https://github.com/thehasnanialeen/KnowTheWeather.git
+    cd /KnowTheWeather
+    ```
+2. Run either `$ yarn install` or `$ npm install`
+
+3. With all dependencies installed and the environment properly configured, you can now run the app:
+
+    Android: ` $ react-native run-android`
+
+    IOS: `$ react-native run-ios`
