@@ -24,7 +24,7 @@ To run this project in the development mode, you'll need to have a basic environ
 
 ## Features
 
-Right  now the app shows the weather conditions of 5 cities:
+The app shows the weather conditions of 5 cities:
 
 1. Regina, Saskatchewan, Canada. 
 2. Toronto, Ontario, Canada.
@@ -32,26 +32,33 @@ Right  now the app shows the weather conditions of 5 cities:
 4. Calgary, Alberta, Canada.
 5. Hyderabad, Telangana, India.
 
-All the data is hard-coded and not real at this point.
+_All the data is hard-coded and not real._
 
-The app has 2 screens:
+#### The app has 2 screens:
 
-1. **Home Screen**
+### Home Screen
 
-     This screen has the following weather conditions shown:
-     - Name of the city
-     - Current Temperature
-     - Hourly temperature for the next 24 hours (Scroll to the right of the box)
-     - Daily High and Low temperature for the next 10 days (Scroll to the right of the box)
-     - Sunrise and Sunset time
-     - Current Wind Speed
-     - Current Humidity
-     - Current Feels Like Temperature
-     - Current Visibility
+The Background in this screen will depict the current weather condition like day, night, snowfall, rain, etc.
+     
+This screen has the following weather conditions shown:
+- Name of the city
+- Current Temperature
+- Hourly temperature for the next 24 hours (Scroll to the right of the box)
+- Daily High and Low temperature for the next 10 days (Scroll to the right of the box)
+- Sunrise and Sunset time
+- Current Wind Speed
+- Current Humidity
+- Current Feels Like Temperature
+- Current Visibility
+     
+_All the temperatues shown in this screen are in celcius._
+    
+Pressing the hamburger icon on the top left-hand corner will take you to a different screen where you will have the option to select a city whose weather you want to see.
 
-     Pressing the hamburger icon on the top left-hand corner will take you to a different screen where you will have the option to select a city whose weather you want to see.
+### List of Cities Screen
 
-2. **List of Cities Screen** 
+This screen will have a list of 5 cities to choose from, which are: Regina, Toronto, Vancouver, Calgary, and Hyderabad. The city whose weather is currenly being shown will be highlighted.
+     
+When you press on a particular city, you will be directed back to the Home Screen where the weather for that city will be shown.
+   
 
-     This screen will have a list of 5 cities to choose from, which are: Regina, Toronto, Vancouver, Calgary, and Hyderabad. 
-     When you press on a particular city, you will be directed back to the Home Screen where the weather for that city will be shown.
