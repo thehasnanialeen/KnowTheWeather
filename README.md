@@ -2,7 +2,7 @@
 
 I have been learning React Native for a few months and thought of implementing my newly learned knowledge. Know The Weather is a basic weather forecast app that shows the temperature and weather conditions of 5 cities (Regina, Vancouver, Toronto, Calgary, and Hyderabad). Know the current temperature, hourly forecast for the next 24 hours, 10-day forecast, and other weather conditions. At present all the app data is hard-coded and not actual.
 
-<img src="https://github.com/thehasnanialeen/KnowTheWeather/blob/master/assets/HomScreen1.jpg" width="190" height="400" /> <img src="https://github.com/thehasnanialeen/KnowTheWeather/blob/master/assets/MenuScreen.jpg" width="190" height="400" /> <img src="https://github.com/thehasnanialeen/KnowTheWeather/blob/master/assets/HomeScreen3.jpg" width="190" height="400" /> <img src="https://github.com/thehasnanialeen/KnowTheWeather/blob/master/assets/HomeScreen4.jpg" width="190" height="400" /> <img src="https://github.com/thehasnanialeen/KnowTheWeather/blob/master/assets/HomeScreen5.jpg" width="190" height="400" />  
+<img src="https://github.com/thehasnanialeen/KnowTheWeather/blob/master/assets/HomScreen1.jpg" width="200" height="400" /> <img src="https://github.com/thehasnanialeen/KnowTheWeather/blob/master/assets/MenuScreen.jpg" width="200" height="400" /> <img src="https://github.com/thehasnanialeen/KnowTheWeather/blob/master/assets/HomeScreen3.jpg" width="200" height="400" /> <img src="https://github.com/thehasnanialeen/KnowTheWeather/blob/master/assets/HomeScreen5.jpg" width="200" height="400" />  
 
 
 ## Manifest
