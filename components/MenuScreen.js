@@ -8,12 +8,37 @@ var active = 'Regina'
 export default function MenuScreen({ navigation, route, WEATHER }) {
   return (
     <View style={{ backgroundColor: '#0b254f' }}>
+    {/**
+      * Header
+      * Purpose: calling the custom component created in header.js 
+      * Prop(s):
+      * <1> navigation
+      * <2> toScreen
+      */}
       <Header navigation={navigation} toScreen={'WeatherScreen'} />
+      {/**
+      * List.Section
+      * Purpose: creates a list of a cities
+      * Prop(s):
+      * <1> style
+      * <2> title
+      * <3> titleStyle
+      */}
       <List.Section
         style={styles.menu}
         title="Cities"
         titleStyle={{ fontSize: 25, fontWeight: 'bold', color: 'white' }}>
         <View style={{ marginLeft: 20 }}>
+
+          {/**
+          * List.Item
+          * Purpose: add city names in the list
+          * Prop(s):
+          * <1> style
+          * <2> title
+          * <3> titleStyle
+          * <4> onPress
+          **/}
           <List.Item
             title="Regina"
             titleStyle={styles.listName}
@@ -109,12 +134,16 @@ export default function MenuScreen({ navigation, route, WEATHER }) {
   );
 }
 
+//stylesheet to style the components and items
 const styles = StyleSheet.create({
+
+  //style for the list of cities
   menu: {
     marginHorizontal: 10,
     height: '100%',
     zIndex: 10,
   },
+  //style for the city names
   listName: {
     color: 'white',
   },

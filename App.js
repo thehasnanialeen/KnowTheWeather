@@ -1,19 +1,22 @@
-import React, { useState } from 'react';
-import {
-  SafeAreaView,
-  View,
-  Text,
-  ImageBackground,
-  ScrollView,
-  Platform,
-} from 'react-native';
+/*
+  *   file: App.js
+  *   author: Aleen Hasnani <ahj126@uregina.ca>
+  *   version: 0.1
+  *   date-created: Apr-01-2022 
+  *   last-modified: Apr-11-2022
+*/
+
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MenuScreen from './components/MenuScreen';
 import WeatherScreen from './components/WeatherScreen';
 import images from './assets/images'
 
+//this is the main function that contains all the screen and calss other screens and components
 export default function App(){
+
+  //it contains the hardcode weather data for 5 cities
   const WEATHER = [
     {
       city: 'Regina',
@@ -828,9 +831,24 @@ export default function App(){
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
+      {/**
+        * Stack.Navigator
+        * Purpose: has a stack of all the screens and contols the navigation between them
+        * Prop(s):
+        * <1> initialRouteName
+        * <2> screenOptions 
+        */}
       <Stack.Navigator
         initialRouteName="WeatherScreen"
         screenOptions={{ headerShown: false }}>
+
+        {/**
+          * Stack.Screen
+          * Purpose: contains the screen component
+          * Prop(s):
+          * <1> name
+          * <2> initialParams
+          */}
         <Stack.Screen name="WeatherScreen" initialParams={{ cityWeather: WEATHER[0], active: 'Regina'}}>
           {props => <WeatherScreen {...props} WEATHER={WEATHER}/>}
         </Stack.Screen>
